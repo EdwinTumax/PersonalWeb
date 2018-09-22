@@ -1,0 +1,183 @@
+/**{
+    border: 1px solid red;
+}*/
+body{
+    font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+.titulo{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;  
+    margin-bottom: 0;
+    margin-top: 70px; 
+}
+.button{
+    border: none;
+    border-radius: 5px;
+    background: #fd324e;
+    color: white;
+}
+.titulo-a{
+    font-size: 24px;
+    margin-top: 0; 
+}
+.titulo-b{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.portada{
+    background-image: url("../imagenes/portada.png");
+    color: white;
+    padding: 20px;
+}
+.contenedor{
+    width: 800px;
+    margin: auto;
+}
+.header{
+    position: relative;
+}
+.logotipo{
+    display: inline-block;
+}
+.menu{
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.skills{
+    color: #1F313C;
+}
+.skills h3{
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 30px;
+}
+
+.skill{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #1F313C;
+    border-radius: 10px;
+}
+
+.skill ol{
+    padding: 0;
+}
+
+.right{
+    float: right;
+    position: relative;
+    top: -127px;    
+}
+.left{
+    float: left;
+    position: relative;
+    top: 80px;
+}
+.contenedor-skill-a{
+    margin-left: 20px;
+}
+.contenedor-skill-b{
+    margin-left: 370px;
+}
+.footer{
+    background: #273b47;
+}
+
+.footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contacto img{
+    display:block;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+}
+.contacto strong{
+    display: block;
+}
+
+.formulario{
+    display: flex;
+    width: 400px;
+    color: white;
+    padding: 50px 10px;
+}
+.col1{
+    margin-right: 10px;
+}
+.col2{
+    align-items: flex-start;
+}
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+}
+.perfil{
+    margin-top: 10px;
+}
+.intereses label{
+    font-size: 20px;
+}
+
+.formulario, .perfil, .intereses{
+    margin-bottom: 10px;
+}
+.tabla{
+    margin: 40px 0;
+}
+
+table{
+    width: 100%;
+}
+th{
+    background: #273b47;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+td{
+    padding: 20px;
+}
+
+table, td, th{
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+
+.col2 .button{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#header{
+ 
+}
+#portada{
+
+}
+#skills{
+    
+}
