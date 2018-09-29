@@ -9,6 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <jsp-config>
+  	<taglib>
+  		<taglib-uri>http://personal.com/jsp/jstl/core</taglib-uri>
+  		<taglib-location>c.tld</taglib-location>
+  	</taglib>
+  </jsp-config>
   <servlet>
   	<servlet-name>ServletContacto</servlet-name>
   	<servlet-class>org.edwintumax.servlet.ServletContacto</servlet-class>
@@ -16,5 +22,13 @@
   <servlet-mapping>
   	<servlet-name>ServletContacto</servlet-name>
   	<url-pattern>/ServletContacto.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ServletListaContacto</servlet-name>
+  	<servlet-class>org.edwintumax.servlet.ServletListaContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletListaContacto</servlet-name>
+  	<url-pattern>/ServletListaContacto.do</url-pattern>
   </servlet-mapping>
 </web-app>

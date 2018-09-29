@@ -23,6 +23,7 @@
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contacto">Contact</a></li>
+                        <li><a href="ServletListaContacto.do">Lista Contactos</a></li>
                         <li><a href="bibliography.jsp">Bibliography</a></li>
                     </ul>
                 </nav>
