@@ -31,4 +31,12 @@
   	<servlet-name>ServletListaContacto</servlet-name>
   	<url-pattern>/ServletListaContacto.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>ServletEliminarContacto</servlet-name>
+  	<servlet-class>org.edwintumax.servlet.ServletEliminarContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletEliminarContacto</servlet-name>
+  <url-pattern>/ServletEliminarContacto.do</url-pattern>
+  </servlet-mapping>
 </web-app>
