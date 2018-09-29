@@ -172,6 +172,11 @@ table, td, th{
     margin-top: 10px;
 }
 
+#respuesta{
+	color: white;
+	font-size: 20px;	
+}
+
 #header{
  
 }

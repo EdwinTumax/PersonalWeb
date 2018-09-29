@@ -4,13 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <title>Mi sitio web</title>
 <link href="css/estilo.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
 </head>
     <body>
         <div class="portada">
-            <header id="header" class="header contenedor">
+            <header id="header" class="header contenedor">            
                 <figure class="logotipo">            
                     <img src="imagenes/logo.png" width="97"  alt="Edwin Tumax">
                 </figure>
@@ -69,7 +73,7 @@
                         <span>edwintumax@gmail.com</span>
                     </a>
                 </div>
-                <form class="formulario" method="post" action="ServletContacto.do">
+                <form id="formContacto" class="formulario" method="post" action="ServletContacto.do">
                     <div class="col1">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" required />        
@@ -109,11 +113,16 @@
                         <div>
                             <label for="comentario">Comentarios</label>
                             <textarea name="comentario" id="comentario" cols="30" rows="7"></textarea>
-                            <input class="button" type="submit" value="Enviar">
+                            <input class="button" type="button" id="btnEnviarContacto" value="Enviar">
                         </div>
+                        <div id="respuesta">
+                        			                          
+                        </div>                        
                     </div>
                 </form>
             </div>
         </footer>
     </body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js" async></script>    
 </html>

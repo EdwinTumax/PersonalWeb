@@ -13,12 +13,17 @@ import org.edwintumax.db.Conexion;
 public class ServletContacto extends HttpServlet {	
 	public void doPost(HttpServletRequest peticion, HttpServletResponse respuesta) throws IOException, ServletException {
 		RequestDispatcher despachador = null;
+		respuesta.setContentType("application/json");
+		respuesta.setCharacterEncoding("UTF8");
 		try {
 			String nombre = peticion.getParameter("nombre");
+			System.out.println(nombre);
 			String email = peticion.getParameter("email");
 			String nivel = peticion.getParameter("developer");
-			String lenguajes[] = peticion.getParameterValues("intereses");
+			String lenguajes[] = peticion.
+					getParameterValues("intereses");
 			StringBuffer resultado = new StringBuffer();
+			
 			for(String len : lenguajes) {
 				resultado.append(len+"/");
 			}
@@ -32,11 +37,14 @@ public class ServletContacto extends HttpServlet {
 				procedimiento.setString(4,resultado.toString());
 				procedimiento.setString(5,comentario);
 				procedimiento.executeQuery();
-				despachador = peticion.getRequestDispatcher("index.jsp");				
+				//despachador = peticion.getRequestDispatcher("index.jsp");
+				respuesta.getWriter().write("{mensaje:'Solicitud enviada'}");
 		}catch(SQLException e) {
 			e.printStackTrace();
+			respuesta.getWriter().write("{mensaje:'Error al enviar la información'}");
 		}
-		despachador.forward(peticion,respuesta);
+		//despachador.forward(peticion,respuesta);
+		
 	}
 	public void doGet(HttpServletRequest peticion, HttpServletResponse respuesta) throws IOException, ServletException {
 		doPost(peticion,respuesta);
