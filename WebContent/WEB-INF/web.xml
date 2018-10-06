@@ -39,4 +39,15 @@
   <servlet-name>ServletEliminarContacto</servlet-name>
   <url-pattern>/ServletEliminarContacto.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+	  <servlet-name>ServletAutenticar</servlet-name>
+	  <servlet-class>org.edwintumax.servlet.ServletAutenticar</servlet-class>
+  </servlet>	 
+  <servlet-mapping>
+	  <servlet-name>ServletAutenticar</servlet-name>
+	  <url-pattern>/ServletAutenticar.do</url-pattern>	
+  </servlet-mapping> 
+  <session-config>
+  	<session-timeout>5</session-timeout>
+  </session-config>
 </web-app>

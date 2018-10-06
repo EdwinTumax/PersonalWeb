@@ -11,3 +11,20 @@ $('#btnEnviarContacto').click(function(){
 		}
 	});
 });
+$('#btnAutenticar').click(function(){
+	$.ajax({		
+		url: "/PersonalWeb/ServletAutenticar.do",
+		data: $("#frmLogin").serialize(),
+		datatype: "json",
+		error:function(){
+			$("#mensaje").html("Error en el servlet");
+		},
+		success:function(data){		
+			$("#mensaje").html(data);
+		}
+	});
+});
+$('#form-login').on('shown.bs.modal', function () {
+	 //alert('Form');
+	$('#email').trigger('focus');
+});
